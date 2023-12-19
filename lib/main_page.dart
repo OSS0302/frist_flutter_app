@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 //케멜 케이스 Case: 뱀형
 //snake_case : 뱀형
 class MainPage extends StatefulWidget {
@@ -64,11 +65,25 @@ class _MainPageState extends State<MainPage> {
                 labelText: '글자 입력',
                 border: OutlineInputBorder(),
               ),
-              onChanged: (text){
+              onChanged: (text) {
                 print(text);
               },
             ),
-
+            //이미지 위젯 네트워크 이미지복사 와 다운로드 해서 assets 파일 넣고 yaml 안에 사진 경로넣기
+            // 이미지 채우기
+            Image.network(
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZhJSwfqNWUuuNpqppZqdAx8v7OlFle5Csr6NNf9SgHG8zuihCnbzHO9yQmviv7eXe34&usqp=CAU',
+              width: 100,
+              height: 100,
+              // 박스 꽉 채우기
+              fit: BoxFit.cover,
+            ),
+            Image.asset(
+              'assets/pic.jpg',
+              width: 100,
+              height: 100,
+              fit: BoxFit.contain,
+            )
           ],
         ),
       ),
