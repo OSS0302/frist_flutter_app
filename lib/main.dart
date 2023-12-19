@@ -4,6 +4,7 @@ import 'package:frist_flutter_app/main_page.dart';
 
 void main() {
   // 메인 함수 가 사라지면 런이 안된다.
+  // 메터리얼 ios 와 다르다
   runApp(const MyApp());
 }
 
