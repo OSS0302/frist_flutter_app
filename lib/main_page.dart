@@ -16,7 +16,7 @@ class _MainPageState extends State<MainPage> {
   // 객체 오브젝트
   // 지역변수 지역안에 ( 메서드 안에서 ) 시영가능
   // 전역변수 어디에서 사용가능
-
+    // 터미널 flutter clean : 빌드 파일 찌꺼기 제거
   int number = 10; // number 변수에 오른쪽값을 넣겠다.
   String _text = '';
   final _textController = TextEditingController();
