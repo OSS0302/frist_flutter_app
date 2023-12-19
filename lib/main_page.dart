@@ -11,6 +11,16 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int number = 10;
+  String _text = '';
+  final _textController = TextEditingController();
+
+
+  //컨트롤러 메모리 해결
+  @override
+  void dispose() {
+    _textController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -77,19 +87,23 @@ class _MainPageState extends State<MainPage> {
                   Expanded(
                     flex: 5,
                     child: TextField(
+                      controller: _textController,
                       decoration: InputDecoration(
                         labelText: '글자 입력',
                         border: OutlineInputBorder(),
                       ),
                       onChanged: (text) {
-                        print(text);
+                        _text = text;
                       },
                     ),
                   ),
                   Expanded(
                     flex: 2,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        print(_textController.text);
+                          print(_text);
+                      },
                       child: Text('로그인'),
                     ),
                   ),
