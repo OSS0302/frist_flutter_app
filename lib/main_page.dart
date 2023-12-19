@@ -14,6 +14,8 @@ class _MainPageState extends State<MainPage> {
   // 인스턴스: final TextEditingController _textController = TextEditingController(); 실제 메모리  주소
   // 변수 변할 수있는 데이터 자료형
   // 객체 오브젝트
+  // 지역변수 지역안에 ( 메서드 안에서 ) 시영가능
+  // 전역변수 어디에서 사용가능
   int number = 10;
   String _text = '';
   final _textController = TextEditingController();
@@ -157,4 +159,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-// 화면이 닫힐떄
