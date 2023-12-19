@@ -10,6 +10,10 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  // 상수 : 변하지 않는 값
+  // 인스턴스: final TextEditingController _textController = TextEditingController(); 실제 메모리  주소
+  // 변수 변할 수있는 데이터 자료형
+  // 객체 오브젝트
   int number = 10;
   String _text = '';
   final _textController = TextEditingController();
@@ -153,3 +157,4 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+// 화면이 닫힐떄
