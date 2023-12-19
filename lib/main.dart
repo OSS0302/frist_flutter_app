@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:frist_flutter_app/main_page.dart';
 
 void main() {
+  // 메인 함수 가 사라지면 런이 안된다.
   runApp(const MyApp());
 }
 
