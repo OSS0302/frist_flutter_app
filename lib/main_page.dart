@@ -58,6 +58,17 @@ class _MainPageState extends State<MainPage> {
               },
               child: Text('TextButton'),
             ),
+            // 텍스트 필드 위젯 os 상태에서 영어는 잘되지만 한글 잘 안된다.
+            TextField(
+              decoration: InputDecoration(
+                labelText: '글자 입력',
+                border: OutlineInputBorder(),
+              ),
+              onChanged: (text){
+                print(text);
+              },
+            ),
+
           ],
         ),
       ),
