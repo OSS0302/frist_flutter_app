@@ -9,7 +9,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int number = 0;
+  int number = 10;
 
   @override
   Widget build(BuildContext context) {
