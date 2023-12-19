@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 //케멜 케이스 Case: 뱀형
 //snake_case : 뱀형
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int count = 0;
+class _MainPageState extends State<MainPage> {
+  int number = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Text(
-              '${count}',
+              '${number}',
               style: TextStyle(
                 fontSize: 60,
                 color: Colors.red,
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {
           // 화면 갱신
           setState(() {
-            count++;
+            number++;
           });
         },
         child: Icon(
