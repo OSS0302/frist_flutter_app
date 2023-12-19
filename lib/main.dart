@@ -39,9 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Text(
           '0',
           style: TextStyle(
-            fontSize: 70,
+            fontSize: 60,
             color: Colors.red,
             fontWeight: FontWeight.bold,
+
           ),
         ),
       ),
