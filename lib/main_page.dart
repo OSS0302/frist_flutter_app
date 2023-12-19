@@ -23,6 +23,12 @@ class _MainPageState extends State<MainPage> {
           //mainAxisAlignment: MainAxisAlignment.end, // 메인방향 정렬 ,
           mainAxisAlignment: MainAxisAlignment.center, // 메인방향 정렬 ,
           children: [
+            // Container 영역
+            Container(
+              color: Colors.red,
+              width: 100,
+              height: 100,
+            ),
             Text(
               '숫자',
               style: TextStyle(
@@ -78,12 +84,20 @@ class _MainPageState extends State<MainPage> {
               // 박스 꽉 채우기
               fit: BoxFit.cover,
             ),
-            Image.asset(
-              'assets/pic.jpg',
-              width: 100,
-              height: 100,
-              fit: BoxFit.contain,
-            )
+            Container(
+              // 부모 크기 넓이 120 높이 120 이면 컨테이너 크기를 따라간다.
+              color: Colors.red,
+              // 패딩 주기
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                  'assets/pic.jpg',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
           ],
         ),
       ),
