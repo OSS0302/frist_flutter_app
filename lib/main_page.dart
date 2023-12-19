@@ -35,6 +35,7 @@ class _MainPageState extends State<MainPage> {
               SizedBox(height: 30),
               Container(height: 10),
               Text(
+                // 인스펙션 사용법 통해서 앱 의구조나 애니메이션 느리게 여러가지 기능 들이 있다.
                 '숫자',
                 style: TextStyle(
                   fontSize: 40,
