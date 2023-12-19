@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // 안드로이드 MaterialApp ios 쿠퍼티노
+    // 안드로이드 MaterialApp ios 쿠퍼티노 메인 왠만하지 않으면 고치지 않는다.
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
