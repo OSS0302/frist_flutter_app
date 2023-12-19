@@ -14,7 +14,6 @@ class _MainPageState extends State<MainPage> {
   String _text = '';
   final _textController = TextEditingController();
 
-
   //컨트롤러 메모리 해결
   @override
   void dispose() {
@@ -102,17 +101,15 @@ class _MainPageState extends State<MainPage> {
                     child: ElevatedButton(
                       onPressed: () {
                         print(_textController.text);
-                          // 화면 갱신
-                          setState(() {
-
-                          });
+                        // 화면 갱신
+                        setState(() {});
                       },
                       child: Text('로그인'),
                     ),
                   ),
                 ],
               ),
-          Text(_textController.text),
+              Text(_textController.text),
               //이미지 위젯 네트워크 이미지복사 와 다운로드 해서 assets 파일 넣고 yaml 안에 사진 경로넣기
               // 이미지 채우기
               Image.network(
