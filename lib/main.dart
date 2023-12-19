@@ -38,13 +38,27 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('홈 화면 '),
       ),
       body: Center(
-        child: Text(
-          '${count}',
-          style: TextStyle(
-            fontSize: 60,
-            color: Colors.red,
-            fontWeight: FontWeight.bold,
-          ),
+        child: Column(
+          //mainAxisAlignment: MainAxisAlignment.end, // 메인방향 정렬 ,
+          mainAxisAlignment: MainAxisAlignment.center, // 메인방향 정렬 ,
+          children: [
+            Text(
+              '숫자',
+              style: TextStyle(
+                fontSize: 40,
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '${count}',
+              style: TextStyle(
+                fontSize: 60,
+                color: Colors.red,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
