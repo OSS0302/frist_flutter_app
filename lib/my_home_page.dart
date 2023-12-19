@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+//케멜 케이스 Case: 뱀형
+//snake_case : 뱀형
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
