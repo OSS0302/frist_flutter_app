@@ -29,6 +29,9 @@ class _MainPageState extends State<MainPage> {
               width: 100,
               height: 100,
             ),
+            //둘다 비슷하다 색깔 주는거 모양주는 말곤 같다.
+            SizedBox(height: 30),
+            Container(height: 10),
             Text(
               '숫자',
               style: TextStyle(
@@ -85,7 +88,8 @@ class _MainPageState extends State<MainPage> {
               fit: BoxFit.cover,
             ),
             Container(
-              // 부모 크기 넓이 120 높이 120 이면 컨테이너 크기를 따라간다.
+              // 크기:(컨테이너>이미지) 컨테이너 크기 넓이 120 높이 120 이면 이미지 크기가  컨테이너 크기를 따라간다.
+              // 크기:(컨테이너<이미지) 자식인 이미지 가 컨테이너 보다 크면 이미지 크기를 따라간다.
               color: Colors.red,
               // 패딩 주기
               child: Padding(
