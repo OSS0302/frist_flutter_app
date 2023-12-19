@@ -102,6 +102,7 @@ class _MainPageState extends State<MainPage> {
                       onPressed: () {
                         print(_textController.text);
                         // 화면 갱신
+                        //  프리퍼티나 클래스앞에 _를 붙인 이유 캡슐화 데이터보호
                         setState(() {});
                       },
                       child: Text('로그인'),
